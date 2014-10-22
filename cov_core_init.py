@@ -41,7 +41,10 @@ def init():
             import coverage
 
             # Determine all source roots.
-            cov_source = cov_source.split(UNIQUE_SEP)
+            if cov_source == 'None':
+                cov_source = None
+            else:
+                cov_source = cov_source.split(UNIQUE_SEP)
 
             # Produce a unique suffix for this process in the same
             # manner as coverage.
