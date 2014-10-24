@@ -43,7 +43,7 @@ class CovController(object):
         self.node_descs = set()
         self.failed_slaves = []
         self.topdir = os.getcwd()
-        self.cov_data_file = '.coverage'
+        self.cov_data_file = os.path.join(self.topdir, '.coverage')
 
     def set_env(self):
         """Put info about coverage into the env so that subprocesses can activate coverage."""
