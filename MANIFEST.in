@@ -3,3 +3,4 @@ include LICENSE.txt
 include setup.py
 include cov_core.py
 include cov_core_init.py
+include init_cov_core.pth
