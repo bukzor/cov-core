@@ -5,4 +5,4 @@ import os, sys
 python_lib = os.path.relpath(get_python_lib(), sys.prefix)
 
 if __name__ == '__main__':
-    print python_lib
+    print(python_lib)
